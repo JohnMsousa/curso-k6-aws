@@ -1,5 +1,10 @@
 name: K6 load test
+
 on: [push]
+
+permissions:
+  contents: write
+
 jobs:
   build:
     name: K6 load test
@@ -10,7 +15,7 @@ jobs:
 
       - name: step 2 - run k6 load test
         uses: grafana/k6-action@v0.2.0
-        with:
+        with: 
           filename: scripts/test.js
 
       - name: step 3 - prepare report folder
@@ -21,6 +26,13 @@ jobs:
 
       - name: step 4 - upload artifact
         uses: actions/upload-artifact@v4
-        with:
+        with: 
           name: relatorio de testes de performance
           path: report
+
+      - name: step 5 - publish report
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_branch: gh-pages
+          publish_dir: report
