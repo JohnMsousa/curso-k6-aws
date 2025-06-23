@@ -47,9 +47,9 @@ Realizamos dois testes de carga utilizando o k6: um executado localmente e outro
 
 Rodar testes de carga próximo ao ambiente de produção (como na AWS) pode oferecer métricas de desempenho mais realistas e com menor latência de rede externa.
 
-Local:
+  Local:
 ![image](https://github.com/user-attachments/assets/5daa45ba-5bd1-494e-8fba-599ed6b0f9ca)
 
-AWS:
+  AWS:
 ![image](https://github.com/user-attachments/assets/78b5d698-c830-4155-a1f4-58bedec659e9)
 
