@@ -52,5 +52,6 @@ Rodar testes de carga próximo ao ambiente de produção (como na AWS) pode ofer
 
 
   AWS:
-![image](https://github.com/user-attachments/assets/78b5d698-c830-4155-a1f4-58bedec659e9)
+![image](https://github.com/user-attachments/assets/1b76e196-f577-4b57-8db6-fc123521f9cf)
+
 
